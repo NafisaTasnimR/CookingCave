@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CookingCave</title>
+    <link rel="icon" href="/photos/cakeIcon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/main.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <img src="/photos/pink-background.png" alt="Backery store" width="900" height="328">
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CookingCave</h1>
+        <h3>Order Your Favourite Cake!</h3>
+
+        <p>Navigate through the page:</p>
+        <nav>
+            <ul>
+                <li><a href="#menu">What You Can Order</a></li>
+                <li><a href="#order">How To Order</a></li>
+            </ul>
+        </nav>
+        <!-- nav part -->
+    </header>
+    <hr>
+    <main>
+        <section id="menu">
+            <h2>What You Can Order</h2>
+            <figure>
+                <img src="/photos/cake1.jpg" alt="cake_1" width="384" height="512">
+                <figcaption>White cake</figcaption>
+            </figure>
+            <p>&nbsp;&nbsp;<b>Price: </b>800</p>
+            <p>&nbsp;&nbsp;<b>Weight:</b> 3(Pound)</p>
+            <br>
+            <figure>
+                <img src="/photos/cake2.jpg" alt="cake_2" width="384" height="512">
+                <figcaption>Another White cake</figcaption>
+            </figure>
+            <p>&nbsp;&nbsp;<b>Price: </b>800</p>
+            <p>&nbsp;&nbsp;<b>Weight:</b> 3(Pound)</p>
+            <br>
+            <figure>
+                <img src="/photos/cake3.jpg" alt="cake_3" width="384" height="512">
+                <figcaption>Brown cake</figcaption>
+            </figure>
+            <p>&nbsp;&nbsp;<b>Price: </b>800</p>
+            <p>&nbsp;&nbsp;<b>Weight:</b> 3(Pound)</p>
+
+        </section>
+        <hr>
+        <section id="order">
+            <h2>How To Order</h2>
+            <!--order form-->
+            <ul>
+                <li><a href="#m_order">Order from the menu</a></li>
+                <li><a href="#c_order">Customized Order</a></li>
+            </ul>
+        </section>
+        <hr>
+        <section id="m_order">
+            <h2>Order From the Menu</h2>
+            <form action="https://httpbin.org/get" method="get">
+                <p>
+                    <label for="cakeName">Cake Name:</label>
+                    <input type="text" name="cakeName" id="cakeName" 
+                    placeholder="Browny" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="cakeWeight">Weight(Pound):</label>
+                    <input type="number" name="weight" id="cakeWeight"
+                    min="1" max="5" step="1" required>
+                </p>
+                <p>
+                    <label for="numberOfCake">Number Of Cake:</label>
+                    <input type="number" name="amount" id="numberOfCake"
+                    min="1" max="5" step="1" required>
+                </p>
+                <p>
+                    <label for="additional">Add Something More:</label>
+                    <input type="text" name="add" id="additional"
+                    placeholder="Add some more sprinkles" autocomplete="on" required>
+                </p>
+            </form>
+        </section>
+        <hr>
+        <section id="c_order">
+            <h2>Customized Order</h2>
+            <details>
+                <dt>About Customized Cake Price</dt>
+                <dd>It would depend on what type of cake with what kind of 
+                    ingredients you are prefering. 
+                </dd>
+                <dd>Base Price: 300 Tk (for each Pound)</dd>
+            </details>
+            <form action="https://httpbin.org/get" method="get">
+                <p>
+                    <label for="cakeDescription">Cake Description:</label>
+                    <input type="text" name="cakeDes" id="cakeDescription"
+                    autocomplete="on" required>
+                </p>
+            </form>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <h2>CookingCave</h2>
+        <p>&lt;&lt;&lt;&copy; CookingCave &gt;&gt;&gt;</p>
+        <p><a href="#">Back to top</a></p>
+    </footer>
+
+</body>
+
+</html>
