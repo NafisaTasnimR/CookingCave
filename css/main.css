@@ -2,6 +2,7 @@ html {
     font-size: 22px;
 }
 body {
-    background-color:#C36241;
-    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#F5EDF0;
+    color: #112A46;
 }
