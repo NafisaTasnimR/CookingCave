@@ -28,6 +28,12 @@ h1 {
     object-fit: cover;
 }
 
+ul.order_form {
+    list-style-type: disc;
+    padding: 1rem;
+    list-style-position: inside;
+}
+
 a:link {
     color: #084883;
     text-decoration: none;
@@ -46,3 +52,4 @@ a:hover {
 a:active {
     color: #437ec2;
 }
+
