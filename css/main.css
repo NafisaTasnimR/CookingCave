@@ -27,3 +27,22 @@ h1 {
     height: 100%;
     object-fit: cover;
 }
+
+a:link {
+    color: #084883;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #57718f;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #112A46;
+    background-color: #f0aec6;
+}
+
+a:active {
+    color: #437ec2;
+}
